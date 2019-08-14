@@ -24,7 +24,7 @@
         <payment translate="label" module="payment">
         	<groups>
         		<directone translate="label">
-                    <label>SecurePay Hosted Page (AU) / DirectOne</label>
+                    <label>DirectOne</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>1</sort_order>
                     <show_in_default>1</show_in_default>

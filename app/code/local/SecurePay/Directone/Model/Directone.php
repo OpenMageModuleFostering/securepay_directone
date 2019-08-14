@@ -27,9 +27,11 @@ class SecurePay_Directone_Model_Directone extends Mage_Payment_Model_Method_Abst
 	const REQUEST_AMOUNT_EDITABLE = 'N';
 	const RETURN_TEXT_DEFAULT = 'Click here to complete the order';
 
-	protected $_code  = 'directone';
+	protected $_code = 'directone';
 	protected $_formBlockType = 'SecurePay_Directone_block_form';
 	protected $_allowCurrencyCode = array('AUD');
+	protected $_canUseInternal = false;
+	protected $_canUseForMultishipping = false;
 	
 	/**
 	 * Assign data to info model instance
@@ -55,9 +57,9 @@ class SecurePay_Directone_Model_Directone extends Mage_Payment_Model_Method_Abst
 	
 	public function getUrl()
 	{
-		$test = ($this->getConfigData('test')==0?false:true);
+		$test = ($this->getConfigData('test') == 0 ? false : true);
 		
-		$url = 'https://vault.safepay.com.au/cgi-bin/'.($test?'test':'make').'_payment.pl';
+		$url = 'https://vault.safepay.com.au/cgi-bin/' . ($test ? 'test' : 'make') . '_payment.pl';
 		
 		return $url;
 	}
@@ -137,7 +139,7 @@ class SecurePay_Directone_Model_Directone extends Mage_Payment_Model_Method_Abst
 		
 		if($simple)
 		{
-			$fields['Invoice '.$this->getCheckout()->getLastRealOrderId()] = '1,'.($cost + $shipping);
+			$fields['Invoice '.$this->getCheckout()->getLastRealOrderId()] = '1,' . ($cost + $shipping);
 		}
 		else
 		{
