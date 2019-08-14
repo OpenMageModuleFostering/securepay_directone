@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+    <name>SecurePay_DirectOne</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>DirectOne module for Magento</summary>
+    <description>Provides support for credit-card payments through the DirectOne hosted payment service.
+
+All card details are collected on the DirectOne server, minimising your security requirements.</description>
+    <notes>Initial release</notes>
+    <authors><author><name>Andrew Dubbeld</name><user>auto-converted</user><email>support@securepay.com.au</email></author></authors>
+    <date>2009-12-23</date>
+    <time>04:21:16</time>
+    <contents><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="template"><dir name="directone"><file name="form.phtml" hash="a2e2fe6f33095392c4c6a48e1449d04c"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="SecurePay_Directone.xml" hash="58bdc2900b324d9df7da478d2faf3dbb"/></dir></target><target name="magelocal"><dir name="SecurePay"><dir name="Directone"><dir name="Block"><file name="Form.php" hash="9822da8ca2dce1a2afcadae432be04c8"/><file name="Redirect.php" hash="9ae2a452f79bd7303f8004892598927b"/></dir><dir name="controllers"><file name="DirectoneController.php" hash="fa035fad9b4527e6f7b57dd39e6ef056"/></dir><dir name="etc"><file name="config.xml" hash="ba250a625c0e707a86fea4ba04faeb94"/><file name="system.xml" hash="cd7dbcee0f87ed76ee76b1670c7261fc"/></dir><dir name="Helper"><file name="Data.php" hash="c382cb57818a80808d42b3e61bfe1c33"/></dir><dir name="Model"><dir name="Directone"><file name="Request.php" hash="9de15a5a5862402fb3e1c522f5d8c1bc"/><file name="Result.php" hash="51001ff42edf9cc0acec1b765e829f1a"/><file name="Session.php" hash="3686130c5ac1cf390058b00adc55cf0d"/></dir><file name="Directone.php" hash="cae028836cd7a2600adf8ac75dd3f52f"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies/>
+</package>

@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/SecurePay_DirectOne",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "DirectOne module for Magento",
+    "authors": [
+    {
+        "name": "Andrew Dubbeld",
+        "email": "support@securepay.com.au"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
