@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/SecurePay_DirectOne",
+    "name": "OpenMageModuleFostering\/SecurePay_DirectOne",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
     "description": "Provides hosted credit-card payments through the DirectOne gateway.",
     "authors": [
-    {
-        "name": "Andrew Dubbeld",
-        "email": "andrewd@securepay.com.au"
-    }
-],
+        {
+            "name": "Andrew Dubbeld",
+            "email": "andrewd@securepay.com.au"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
